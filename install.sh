@@ -33,3 +33,4 @@ sed -i "s,^CRF_BACKEND_EXEC =.*$,CRF_BACKEND_EXEC = '$SCRIPTPATH/external/Wapiti
 cp config.ini.example config.ini
 sed -i "s,^smor_model =.*$,smor_model = $SCRIPTPATH/external/zmorge-20150315-smor_newlemma.ca," config.ini
 sed -i "s,^taggercmd =.*$,taggercmd = $SCRIPTPATH/external/clevertagger/clevertagger," config.ini
+sed -i "s,^processes =.*$,processes = 12," config.ini
